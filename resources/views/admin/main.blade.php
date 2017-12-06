@@ -22,6 +22,9 @@
 		                <li>
 		                    <a href="{{ route('category.index') }}">Category</a>
 		                </li>
+		                <li>
+		                    <a href="#">Orders</a>
+		                </li>
 		            </ul>
 	            </div>
             </div>
