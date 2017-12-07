@@ -34,7 +34,12 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $formInput = $request->all();
+
+        $this->validate($request, [
+            'name' => $request->name,
+            'category_id' => $request->category_id,
+        ]);
     }
 
     /**
